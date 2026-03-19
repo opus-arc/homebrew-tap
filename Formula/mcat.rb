@@ -6,11 +6,26 @@ class Mcat < Formula
   license "Apache-2.0"
 
   depends_on :macos
+  depends_on "ffmpeg"
+  depends_on "sox"
+  depends_on "fileicon"
 
   def install
     bin.install "mcat"
     prefix.install "README.md"
     prefix.install "LICENSE"
+  end
+
+  def caveats
+    <<~EOS
+      mcat also requires:
+        - Apple Music
+        - a configured CoreAudio virtual audio device
+          (such as BlackHole, Loopback, or Soundflower)
+
+      After installation:
+        mcat --help
+    EOS
   end
 
   test do
