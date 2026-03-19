@@ -1,2 +1,8 @@
 # homebrew-tap
-Homebrew tap for command-line tools by opus-arc.
+
+Homebrew formulas for command-line tools by opus-arc.
+
+## Install
+
+```bash
+brew install opus-arc/tap/mcat
