@@ -1,4 +1,4 @@
-class motif < Formula
+class Motif < Formula
   desc "Motif is a C++ command-line tool for audio thumbnailing."
   homepage "https://github.com/opus-arc/Motif"
   url "https://github.com/opus-arc/Motif/releases/download/v0.1.0/motif-macos-arm64-v0.1.0.tar.gz"
