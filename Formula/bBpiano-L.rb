@@ -1,4 +1,4 @@
-class BbpianoLite < Formula
+class BbpianoL < Formula
   desc "Command-line acoustic engine laboratory for bBpiano Lite"
   homepage "https://github.com/opus-arc/bBpiano"
   url "https://github.com/opus-arc/bBpiano/releases/download/v0.1.0-L/bBpiano-Lite-v0.1.0-L-macOS-arm64.zip"
