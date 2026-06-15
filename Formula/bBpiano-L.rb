@@ -3,7 +3,7 @@ class BbpianoL < Formula
   homepage "https://github.com/opus-arc/bBpiano"
   version "L0-100c"
   url "https://github.com/opus-arc/bBpiano/releases/download/L0-100c/bBpiano-L0-100c-macOS-arm64.zip"
-  sha256 "71e333c005982b39d66076c655e963430611a911a5de777087bac337d70ed6bd"
+  sha256 "ce9e552835242fa26d134a5cef52be2301ce372dce7253b2c3ea900b17c66820"
   license "PolyForm-Internal-Use-1.0.0"
 
   depends_on :macos
