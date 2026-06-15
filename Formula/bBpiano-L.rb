@@ -1,9 +1,9 @@
 class BbpianoL < Formula
   desc "Command-line acoustic engine laboratory for bBpiano Lite"
   homepage "https://github.com/opus-arc/bBpiano"
-  version "L0-beta"
-  url "https://github.com/opus-arc/bBpiano/releases/download/L0-beta/bBpiano-L0-beta-macOS-arm64.zip"
-  sha256 "d6b551afe43c7d2a6b1cc4a9393b698a87e3dca4c6e5ef5c6180bdee5eaffa36"
+  version "L0-100c"
+  url "https://github.com/opus-arc/bBpiano/releases/download/L0-100c/bBpiano-L0-100c-macOS-arm64.zip"
+  sha256 "71e333c005982b39d66076c655e963430611a911a5de777087bac337d70ed6bd"
   license "PolyForm-Internal-Use-1.0.0"
 
   depends_on :macos
