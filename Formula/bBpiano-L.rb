@@ -1,10 +1,11 @@
 class BbpianoL < Formula
   desc "Command-line acoustic engine laboratory for bBpiano Lite"
   homepage "https://github.com/opus-arc/bBpiano"
-  version "L0-100c"
-  url "https://github.com/opus-arc/bBpiano/releases/download/L0-100c/bBpiano-L0-100c-macOS-arm64.zip"
-  sha256 "ce9e552835242fa26d134a5cef52be2301ce372dce7253b2c3ea900b17c66820"
-  license "PolyForm-Internal-Use-1.0.0"
+  url "https://github.com/opus-arc/bBpiano/releases/download/L1-Clavier/bBpiano-L1-Clavier-260917-macOS-arm64.zip"
+  version "L1-Clavier"
+  sha256 "9c7b4601dce2129dd720064abc9c3d2da113c0ca4b161424bc88e244f1d907c0"
+  license :cannot_represent
+  revision 1
 
   depends_on :macos
 
@@ -16,11 +17,11 @@ class BbpianoL < Formula
 
   def caveats
     <<~EOS
-  
+
       ┌──────────────────────────────────────┐
       │                                      │
-      │  bBpiano                             │                          
-      │  L/260608                            │                          
+      │  bBpiano                             │
+      │  L1-Clavier/260903                   │
       │                                      │
       │  Physical Modeling Piano             │
       │                                      │
@@ -29,9 +30,9 @@ class BbpianoL < Formula
       │                                      │
       │  bBSonicLab                          │
       └──────────────────────────────────────┘
-      
+
        Never forget such a path of inquiry.
-            
+
     EOS
   end
 
