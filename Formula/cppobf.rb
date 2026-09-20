@@ -1,8 +1,8 @@
 class Cppobf < Formula
   desc "Modern C++ source obfuscation frontend for COBF"
   homepage "https://github.com/opus-arc/cppobf"
-  url "https://github.com/opus-arc/cppobf/releases/download/v0.1.1/cppobf-v0.1.1-macos-arm64.tar.gz"
-  sha256 "867eac77bc238a868866d05eabce9e124b6b0dfaab5e0d2bd367be7d63e5c869"
+  url "https://github.com/opus-arc/cppobf/releases/download/v0.1.2/cppobf-v0.1.2-macos-arm64.tar.gz"
+  sha256 "8228be4d4ac8080cad0ef29e21d054df230c3c2bc4dd71cd24ee3ec0a5f23d3c"
 
   depends_on arch: :arm64
   depends_on :macos
@@ -14,6 +14,6 @@ class Cppobf < Formula
   end
 
   test do
-    assert_match "cppobf 0.1.1", shell_output("#{bin}/cppobf --version")
+    assert_match "cppobf 0.1.2", shell_output("#{bin}/cppobf --version")
   end
 end
