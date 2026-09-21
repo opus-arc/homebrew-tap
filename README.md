@@ -8,4 +8,6 @@ Homebrew formulas for command-line tools by opus-arc.
 brew install opus-arc/tap/bBpiano-L
 brew install opus-arc/tap/mcat
 brew install opus-arc/tap/motif
-
+brew install opus-arc/tap/cppobf
+brew install opus-arc/tap/cc20
+```
