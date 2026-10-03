@@ -1,8 +1,8 @@
 class Mcat < Formula
   desc "macOS CLI for Apple Music background recording and track archiving"
   homepage "https://github.com/opus-arc/MusicCat"
-  url "https://github.com/opus-arc/MusicCat/releases/download/v0.2.3/mcat-macos-arm64-v0.2.3.tar.gz"
-  sha256 "e0cde3587e5d3ccfd75f6c696bd2a67fb2d6250486ed16a4d08bf016a3de9bf3"
+  url "https://github.com/opus-arc/MusicCat/releases/download/v0.2.4/mcat-macos-arm64-v0.2.4.tar.gz"
+  sha256 "2f2500391bb5a95fcf28b4311e14f10ab0af43c39628d6f79abb1b7f1a652700"
   license "Apache-2.0"
 
   depends_on "ffmpeg"
@@ -25,6 +25,7 @@ class Mcat < Formula
 
       Downloading albums before recording is recommended but not required.
       mcat does not repair or splice network interruptions.
+      Disable Apple Music AutoMix/Crossfade before recording complete tracks.
 
       If the optional Transkun CLI is available on PATH, successful recordings
       also produce <Album>/midi/<Track>.mid.
@@ -36,6 +37,6 @@ class Mcat < Formula
   end
 
   test do
-    assert_match "mcat 0.2.3", shell_output("#{bin}/mcat --version")
+    assert_match "mcat 0.2.4", shell_output("#{bin}/mcat --version")
   end
 end
