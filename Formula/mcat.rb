@@ -2,7 +2,7 @@ class Mcat < Formula
   desc "Apple Music recorder with optional MIDI and MusicXML transcription"
   homepage "https://github.com/opus-arc/MusicCat"
   url "https://github.com/opus-arc/MusicCat/releases/download/v0.3.0/mcat-macos-arm64-v0.3.0.tar.gz"
-  sha256 "95b0458664462cd967b23582048662f8cbd28ecf2c3b87d6d300ad862520ce2a"
+  sha256 "f127da9b68131016cf143f8778cde2dd6c0fc11e3a6202a90017013e8d62f879"
   license "Apache-2.0"
 
   depends_on "ffmpeg"

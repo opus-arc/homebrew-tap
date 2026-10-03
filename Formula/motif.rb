@@ -2,7 +2,7 @@ class Motif < Formula
   desc "Motif is a C++ command-line tool for audio thumbnailing."
   homepage "https://github.com/opus-arc/Motif"
   url "https://github.com/opus-arc/Motif/releases/download/v0.1.0/motif-macos-arm64-v0.1.0.tar.gz"
-  sha256 "f8d2c057ae35e28c7305d52c5e3b92afaca072154902fbf6a2a8043574753900"
+  sha256 "734ea37eddcb2f6f9f321b1677977dd7afc88c5a10ed64e32cf8d90e4983e481"
   license "Apache-2.0"
 
   depends_on :macos
