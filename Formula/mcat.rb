@@ -1,8 +1,8 @@
 class Mcat < Formula
   desc "macOS CLI for Apple Music background recording and track archiving"
   homepage "https://github.com/opus-arc/MusicCat"
-  url "https://github.com/opus-arc/MusicCat/releases/download/v0.2.1/mcat-macos-arm64-v0.2.1.tar.gz"
-  sha256 "4f3555d5256989d29800db39ab6496e25deaad598995090d0a18d29eb21670ed"
+  url "https://github.com/opus-arc/MusicCat/releases/download/v0.2.3/mcat-macos-arm64-v0.2.3.tar.gz"
+  sha256 "e0cde3587e5d3ccfd75f6c696bd2a67fb2d6250486ed16a4d08bf016a3de9bf3"
   license "Apache-2.0"
 
   depends_on "ffmpeg"
@@ -36,6 +36,6 @@ class Mcat < Formula
   end
 
   test do
-    assert_match "mcat 0.2.1", shell_output("#{bin}/mcat --version")
+    assert_match "mcat 0.2.3", shell_output("#{bin}/mcat --version")
   end
 end
