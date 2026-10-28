@@ -3,10 +3,10 @@ require_relative "../lib/bbs_internal_release_download_strategy"
 class BbsStrata < Formula
   desc "Piano partials, modal candidates, loss and inharmonicity analysis"
   homepage "https://github.com/opus-arc/bBpiano-internal"
-  url "https://github.com/opus-arc/bBpiano-internal/releases/download/bbs-strata-v0.1.0/bbs-strata-0.1.0-macos-arm64.tar.gz",
+  url "https://github.com/opus-arc/bBpiano-internal/releases/download/bbs-strata-v0.1.1/bbs-strata-0.1.1-macos-arm64.tar.gz",
       using: BbsInternalReleaseDownloadStrategy
-  version "0.1.0"
-  sha256 "793ad2f838d137be0e291712b23d03815245188c6e594f8811a375ca3494fbb2"
+  version "0.1.1"
+  sha256 "df844b3d07ecf2dce2a8127c7a4f10213f3c2e818c5e7b9930693666f183122d"
   license :cannot_represent
 
   depends_on arch: :arm64
@@ -18,7 +18,7 @@ class BbsStrata < Formula
     # ID signatures. Keep the verified payload packed until that step is over.
     libexec.mkpath
     cp cached_download, libexec/"payload.tar.gz"
-    bin.write_exec_script libexec/"runtime/bbs-strata-0.1.0-macos-arm64/bbs-strata/bbs-strata"
+    bin.write_exec_script libexec/"runtime/bbs-strata-0.1.1-macos-arm64/bbs-strata/bbs-strata"
     (bin/"bbs-strata").chmod 0755
     prefix.install "README.md", "POLES.md", "STRATA.md", "LICENSE.txt", "BUILD_VERSIONS.txt"
     prefix.install "THIRD_PARTY_LICENSES"
@@ -43,7 +43,7 @@ class BbsStrata < Formula
   end
 
   test do
-    assert_match "bbs-strata 0.1.0", shell_output("#{bin}/bbs-strata --version")
+    assert_match "bbs-strata 0.1.1", shell_output("#{bin}/bbs-strata --version")
     samples = (0...4001).map { |i| (8000 * Math.sin(2 * Math::PI * 440 * i / 16_000)).to_i }.pack("s<*")
     wav = "RIFF" + [36 + samples.bytesize].pack("V") + "WAVEfmt " +
           [16, 1, 1, 16_000, 32_000, 2, 16].pack("VvvVVvv") + "data" + [samples.bytesize].pack("V") + samples
