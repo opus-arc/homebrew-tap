@@ -24,13 +24,12 @@ class BbsDecomp < Formula
     prefix.install "THIRD_PARTY_LICENSES"
   end
 
-  # Keep compatibility with Homebrew versions predating post_install_steps.
-  # rubocop:disable FormulaAudit/InstallSteps
-  def post_install
-    (libexec/"runtime").mkpath
-    system "/usr/bin/tar", "-xzf", libexec/"payload.tar.gz", "-C", libexec/"runtime"
+  post_install_steps do
+    mkdir_p "runtime", base: :libexec
+    run "/usr/bin/tar",
+        args: ["-xzf", "{{libexec}}/payload.tar.gz", "-C", "{{libexec}}/runtime"],
+        writable_paths: ["runtime"], writable_base: :libexec
   end
-  # rubocop:enable FormulaAudit/InstallSteps
 
   def caveats
     <<~EOS
