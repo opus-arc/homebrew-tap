@@ -5,14 +5,14 @@ class BbpianoL < Formula
   version "L2-200c"
   sha256 "5a20184e119adfcdbe4a8ed5221abd66a37d4bcc4566c9d04768e1363ea522a8"
   license :cannot_represent
-  revision 1
 
-  depends_on :macos
+  depends_on arch: :arm64
+  depends_on macos: :golden_gate
 
   def install
     bin.install "bbpl"
-    prefix.install "README.md"
-    prefix.install "LICENSE"
+    prefix.install "README.md", "BENCHMARKS.md", "README.txt", "LICENSE", "Developer-ID-Application.cer"
+    prefix.install "doc"
   end
 
   def caveats
@@ -21,12 +21,12 @@ class BbpianoL < Formula
       ┌──────────────────────────────────────┐
       │                                      │
       │  bBpiano                             │
-      │  L1-Clavier/260903                   │
+      │  L2-200c/261122                      │
       │                                      │
       │  Physical Modeling Piano             │
       │                                      │
       │  Developed by                        │
-      │  Ziyang Tan · Zhuoran Chen           │
+      │  Ziyang Tan                          │
       │                                      │
       │  bBSonicLab                          │
       └──────────────────────────────────────┘
@@ -37,6 +37,7 @@ class BbpianoL < Formula
   end
 
   test do
+    assert_match "L2-200c", shell_output("#{bin}/bbpl -v")
     system "#{bin}/bbpl", "--help"
   end
 end
