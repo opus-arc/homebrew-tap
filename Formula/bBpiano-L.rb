@@ -1,9 +1,9 @@
 class BbpianoL < Formula
   desc "Command-line acoustic engine laboratory for bBpiano Lite"
   homepage "https://github.com/opus-arc/bBpiano"
-  url "https://github.com/opus-arc/bBpiano/releases/download/L2-200c/bBpiano-L2-200c-macos-arm64.zip"
-  version "L2-200c"
-  sha256 "5a20184e119adfcdbe4a8ed5221abd66a37d4bcc4566c9d04768e1363ea522a8"
+  url "https://github.com/opus-arc/bBpiano/releases/download/L2-200c-Tiny/bBpiano-L2-200c-Tiny-macos-arm64.zip"
+  version "L2-200c-Tiny"
+  sha256 "c0dbf4a63f03a93d73515d703d93e4ebcaf07a9df9348350d8f98d6dfeca5dbb"
   license :cannot_represent
 
   depends_on arch: :arm64
