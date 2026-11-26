@@ -11,8 +11,7 @@ class BbpianoL < Formula
 
   def install
     bin.install "bbpl"
-    prefix.install "README.md", "BENCHMARKS.md", "README.txt", "LICENSE", "Developer-ID-Application.cer"
-    prefix.install "doc"
+    prefix.install "README.md", "LICENSE"
   end
 
   def caveats
