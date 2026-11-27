@@ -3,7 +3,7 @@ class BbpianoL < Formula
   homepage "https://github.com/opus-arc/bBpiano"
   url "https://github.com/opus-arc/bBpiano/releases/download/L2-200c-Tiny/bBpiano-L2-200c-Tiny-macos-arm64.zip"
   version "L2-200c-Tiny"
-  sha256 "c0dbf4a63f03a93d73515d703d93e4ebcaf07a9df9348350d8f98d6dfeca5dbb"
+  sha256 "4797cb92a9c02019ce59890c7f1b79ca822042741ef0fcb6a63a9f2f588fac26"
   license :cannot_represent
 
   depends_on arch: :arm64
